@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+        }
+        .tabs div {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tabs div.active {
+            background-color: #555;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            color: white;
+            min-height: 300px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-content.intro {
+            background-image: url('自我介绍背景图片链接');
+            background-size: cover;
+            background-position: center;
+        }
+        .tab-content.resume {
+            background-image: url('个人简历背景图片链接');
+            background-size: cover;
+            background-position: center;
+        }
+        .tab-content.portfolio {
+            background-image: url('作品展示背景图片链接');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        }
+        .portfolio-sidebar {
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+        }
+        .portfolio-sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .portfolio-sidebar ul li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .portfolio-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .portfolio-content img {
+            width: 100%;
+            height: auto;
+        }
+        .work {
+            display: none;
+        }
+        .work.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tabs">
+    <div class="tab-link active" data-tab="intro">自我介绍</div>
+    <div class="tab-link" data-tab="resume">个人简历</div>
+    <div class="tab-link" data-tab="portfolio">作品展示</div>
+</div>
+
+<div id="intro" class="tab-content intro active">
+    <h2>自我介绍</h2>
+    <p>在此处输入你的自我介绍内容。</p>
+</div>
+
+<div id="resume" class="tab-content resume">
+    <h2>个人简历</h2>
+    <p>在此处输入你的简历信息，例如教育背景、工作经验、技能等。</p>
+</div>
+
+<div id="portfolio" class="tab-content portfolio">
+    <div class="portfolio-sidebar">
+        <ul>
+            <li data-work="work1">作品1</li>
+            <li data-work="work2">作品2</li>
+            <!-- 可以添加更多作品 -->
+        </ul>
+    </div>
+    <div class="portfolio-content">
+        <div id="work1" class="work active">
+            <h2>作品1</h2>
+            <img src="作品1的图片链接" alt="作品1描述">
+            <p>作品1的描述和详细信息。</p>
+        </div>
+        <div id="work2" class="work">
+            <h2>作品2</h2>
+            <img src="作品2的图片链接" alt="作品2描述">
+            <p>作品2的描述和详细信息。</p>
+        </div>
+        <!-- 可以添加更多作品内容 -->
+    </div>
+</div>
+
+<script>
+    const tabs = document.querySelectorAll('.tab-link');
+    const contents = document.querySelectorAll('.tab-content');
+    const works = document.querySelectorAll('.work');
+    const sidebarLinks = document.querySelectorAll('.portfolio-sidebar ul li');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(item => item.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            this.classList.add('active');
+            const activeTab = document.getElementById(this.getAttribute('data-tab'));
+            activeTab.classList.add('active');
+
+            if (this.getAttribute('data-tab') === 'portfolio') {
+                document.querySelector('.portfolio-sidebar').style.display = 'block';
+                document.querySelector('.portfolio-content').style.display = 'block';
+            } else {
+                document.querySelector('.portfolio-sidebar').style.display = 'none';
+                document.querySelector('.portfolio-content').style.display = 'none';
+            }
+        });
+    });
+
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            works.forEach(work => work.classList.remove('active'));
+            document.getElementById(this.getAttribute('data-work')).classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
