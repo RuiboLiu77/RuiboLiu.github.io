@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "title": "AI绘图工具",
+            "description": "基于Stable diffusion 开源模型训练不同风格的材质LORA，并结合Groundino工具实现针对图片中指定物体的修改和局部重绘",
+            "image": "ai_drawing/aidrawing_cover.jpg",
+            "images": ["ai_drawing/process_zh.jpg","ai_drawing/sd1.jpg","ai_drawing/sd2.jpg", "ai_drawing/sd3.jpg","ai_drawing/sd4.jpg"
+                        ,"ai_drawing/sd5.jpg","ai_drawing/sd6.jpg","ai_drawing/sd7.jpg"] 
+            
+        },
+        {
+            "title": "基于大模型的数字虚拟人APP",
+            "description": "该APP通过集成先进的图像处理、语音合成和深度学习技术，创造了一个能够进行低延迟、高互动性对话的个性化数字虚拟人；支持用户自定义上传人物形象与语音信息，实现自定义虚拟人角色形象",
+            "image": "qspb/qspb_cover.jpg",
+            "images": ["qspb/qspb_uidesign.jpg", "qspb/qspb_design_zh.jpg"],
+            "video": "qspb/qspb_video.mp4"
+        },
+        {
+            "title": "卡通形象设计",
+            "description": "根据公司卡通形象设计，制作卡通形象的3D建模，并通过分块打印与多色3D打印的方法制作实物模型",
+            "image": "mascot/mascot_cover.jpg",
+            "images": ["mascot/soft_design.jpg", "mascot/soft_fullview.jpg","mascot/soft_realview.jpg", "mascot/xz_design.jpg"
+                        ,"mascot/xz_fullview.jpg","mascot/xz_explode.jpg","mascot/xz_realview.jpg"]
+        },
+        {
+            "title": "3D打印模型制作",
+            "description": "基于游戏装备形象建模，修改内部电路设计，并通过3d打印与PCB集成电路设计制作实体发光模型",
+            "image": "firefly/firefly_cover.jpg",
+            "images": ["firefly/firefly_sw.jpg", "firefly/firefly_pcb.jpg","firefly/firefly_process.jpg","firefly/firefly_fullview.jpg"]
+        },
+        {
+            "title": "中学科学实验AI评分系统",
+            "description": "基于深圳市物理，化学和生物实验标准设计共15个不同实验的评分准则，同时利用计算机视觉模型实现对多种实验器材与正确操作的识别与评分",
+            "image": "ty/ty_cover.jpg",
+            "images": ["ty/ty_cover.jpg","ty/ty_mainview.jpg", "ty/ty_sideview.jpg"]
+        },
+        {
+            "title": "多形态四足机器人课题 - 哥伦比亚大学CML",
+            "description": "参与多形态四足机器人研究课题，编写脚本生成符合课题需求的机器人形态，并通过pybullet虚拟环境优化不同形态机器人的运动步态；同时通过3d打印等技术制作机器人模型，探究模拟器与现实环境的步态差异\n 论文链接：https://doi.org/10.48550/arXiv.2403.10496",
+            "image": "self_model/sr_cover.jpg",
+            "images": ["self_model/sr_1.jpg", "self_model/sr_2.jpg", "self_model/sr_3.jpg"]
+        },
+        {
+            "title": "整理桌面机械臂课题 - 哥伦比亚大学CML",
+            "description": "参与整理机械臂机器人的研究课题，改进其机械结构与抓取部位的设计，同时利用计算机视觉模型实现对抓取物体的角度，颜色等信息的识别；并与模拟器环境进行通讯，完成逆运动学计算，指导机械臂同步运动\n 论文链接：https://doi.org/10.48550/arXiv.2310.04566",
+            "image": "robot_arm/robot_arm_setup1.jpg",
+            "images": ["robot_arm/robot_arm_setup1.jpg", "robot_arm/robot_arm_setup2.jpg", "robot_arm/robot_arm_pybullet1.jpg","robot_arm/robot_arm_sim2real.jpg"],
+            "video": "robot_arm/robot_arm.mp4"
+        },
+        {
+            "title": "双足兔子机器人",
+            "description": "参与多形态四足机器人研究课题，编写脚本生成符合课题需求的机器人形态，并通过pybullet虚拟环境优化不同形态机器人的运动步态；同时通过3d打印等技术制作机器人模型，探究模拟器与现实环境的步态差异",
+            "image": "rabbit/rabbit_cover.jpg",
+            "images": ["rabbit/rabbit_mainview.jpg", "rabbit/rabbit_design.jpg", "rabbit/rabbit_explode.jpg"]
+        }
+
+        
+    ]
+}

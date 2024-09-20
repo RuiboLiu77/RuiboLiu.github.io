@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "title": "AI Drawing Tool",
+            "description": "Based on Stable Diffusion open-source model, trained LORA for different styles of textures, combined with the Groundino tool to achieve modification and partial redrawing of specified objects in the image.",
+            "image": "ai_drawing/aidrawing_cover.jpg",
+            "images": ["ai_drawing/process_en.jpg","ai_drawing/sd1.jpg","ai_drawing/sd2.jpg", "ai_drawing/sd3.jpg","ai_drawing/sd4.jpg"
+                        ,"ai_drawing/sd5.jpg","ai_drawing/sd6.jpg","ai_drawing/sd7.jpg"] 
+        },
+        {
+            "title": "Digital Avatar App Based on Large Models",
+            "description": "This app integrates advanced image processing, speech synthesis, and deep learning technologies to create a personalized digital avatar that can engage in low-latency, highly interactive conversations; users can upload custom character images and voice information to create personalized virtual characters.",
+            "image": "qspb/qspb_cover.jpg",
+            "images": ["qspb/qspb_uidesign.jpg", "qspb/qspb_design_en.jpg"],
+            "video": "qspb/qspb_video.mp4"
+        },
+        {
+            "title": "Cartoon Character Design",
+            "description": "Designed cartoon characters for the company, created 3D models of cartoon figures, and used segmented and multi-color 3D printing to produce physical models.",
+            "image": "mascot/mascot_cover.jpg",
+            "images": ["mascot/soft_design.jpg", "mascot/soft_fullview.jpg","mascot/soft_realview.jpg", "mascot/xz_design.jpg"
+                        ,"mascot/xz_fullview.jpg","mascot/xz_explode.jpg","mascot/xz_realview.jpg"]
+        },
+        {
+            "title": "3D Printed Model Production",
+            "description": "Modeled game equipment, modified the internal circuit design, and created a glowing physical model using 3D printing and PCB integrated circuit design.",
+            "image": "firefly/firefly_cover.jpg",
+            "images": ["firefly/firefly_sw.jpg", "firefly/firefly_pcb.jpg","firefly/firefly_process.jpg","firefly/firefly_fullview.jpg"]
+        },
+        {
+            "title": "AI Grading System for Middle School Science Experiments",
+            "description": "Designed grading criteria for 15 different physics, chemistry, and biology experiments based on Shenzhen’s standards, and used computer vision models to recognize and grade various experimental apparatus and correct procedures.",
+            "image": "ty/ty_cover.jpg",
+            "images": ["ty/ty_cover.jpg","ty/ty_mainview.jpg", "ty/ty_sideview.jpg"]
+        },
+        {
+            "title": "Multi-Form Quadruped Robot Project - Columbia University CML",
+            "description": "Participated in the research project of multi-form quadruped robots, wrote scripts to generate robot forms according to the project requirements, optimized the gaits of different robot forms in the pybullet virtual environment, and used 3D printing to create physical robot models to explore the differences between simulator and real-world gaits.\n Paper link: https://doi.org/10.48550/arXiv.2403.10496",
+            "image": "self_model/sr_cover.jpg",
+            "images": ["self_model/sr_1.jpg", "self_model/sr_2.jpg", "self_model/sr_3.jpg"]
+        },
+        {
+            "title": "Desktop Knolling Robot Arm Project - Columbia University CML",
+            "description": "Participated in the research project of organizing robotic arms, improved the mechanical structure and gripping part design, used computer vision models to recognize object angles, colors, etc., and communicated with the simulator environment to complete inverse kinematics calculations, guiding the robotic arm’s synchronized movements.\n Paper link: https://doi.org/10.48550/arXiv.2310.04566",
+            "image": "robot_arm/robot_arm_setup1.jpg",
+            "images": ["robot_arm/robot_arm_setup1.jpg", "robot_arm/robot_arm_setup2.jpg", "robot_arm/robot_arm_pybullet1.jpg","robot_arm/robot_arm_sim2real.jpg"],
+            "video": "robot_arm/robot_arm.mp4"
+        },
+        {
+            "title": "Bipedal Rabbit Robot",
+            "description": "Participated in the research project of multi-form quadruped robots, wrote scripts to generate robot forms according to the project requirements, optimized the gaits of different robot forms in the pybullet virtual environment, and used 3D printing to create physical robot models to explore the differences between simulator and real-world gaits.",
+            "image": "rabbit/rabbit_cover.jpg",
+            "images": ["rabbit/rabbit_mainview.jpg", "rabbit/rabbit_design.jpg", "rabbit/rabbit_explode.jpg"]
+        }
+    ]
+}

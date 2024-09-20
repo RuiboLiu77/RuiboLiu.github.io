@@ -1,0 +1,142 @@
+/* resume_styles.css */
+body.resume-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body.resume-body .tabs {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+body.resume-body .tabs div {
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+body.resume-body .tabs div.active {
+    background-color: #555;
+}
+
+body.resume-body .resume-content {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+body.resume-body .resume-content h2, 
+body.resume-body .resume-content h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 教育背景部分的CSS */
+body.resume-body .resume-content .education-item {
+    margin-bottom: 15px;
+}
+
+body.resume-body .resume-content .education-degree-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.resume-body .resume-content .education-degree {
+    font-weight: bold;
+    color: #444;
+}
+
+body.resume-body .resume-content .education-date {
+    color: #999;
+    font-size: 0.9em;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+body.resume-body .resume-content .education-school, 
+body.resume-body .resume-content .education-gpa {
+    margin-top: 5px;
+    color: #444;
+}
+
+body.resume-body .resume-content .education-gpa {
+    font-style: italic;
+}
+
+/* 工作经验部分 */
+body.resume-body .resume-content .experience-item {
+    margin-bottom: 25px;
+}
+
+body.resume-body .resume-content .experience-item h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body.resume-body .resume-content .experience-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+body.resume-body .resume-content .experience-item li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+/* 项目经验部分 */
+body.resume-body .resume-content .project-title::before {
+    content: "➤ ";  
+    color: #444;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+body.resume-body .resume-content .project-item {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+body.resume-body .resume-content .project-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+body.resume-body .resume-content .project-item li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+/* 个人信息部分 */
+body.resume-body .resume-content .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+body.resume-body .resume-content .personal-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+body.resume-body .resume-content .personal-photo {
+    margin-left: 10px;
+}
+
+body.resume-body .resume-content .personal-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
