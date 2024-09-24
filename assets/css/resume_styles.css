@@ -14,6 +14,36 @@ body.resume-body .tabs {
     padding: 10px 20px;
 }
 
+.resume-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Add spacing between the buttons */
+    margin-bottom: 20px; /* Add some space between buttons and content below */
+}
+
+
+.resume-buttons .btn {
+    display: inline-block;
+    padding: 12px 30px; /* Larger padding for a modern feel */
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Rounded buttons for a smoother look */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-buttons .btn:hover {
+    background-color: #0056b3; /* Darken color on hover */
+}
+
+@media (max-width: 600px) {
+    .resume-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 body.resume-body .tabs div {
     cursor: pointer;
     margin-left: 20px;
@@ -31,6 +61,12 @@ body.resume-body .resume-content {
     padding: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.resume-content .section {
+    padding-bottom: 20px; /* 增加下方内边距以提供足够的空间 */
+    margin-bottom: 20px;  /* 使分割线与下一部分有间距 */
+    border-bottom: 1px solid #ccc; /* 添加1px的灰色分割线 */
 }
 
 body.resume-body .resume-content h2, 

@@ -65,7 +65,8 @@ function openModal(index) {
 
     // 如果项目有视频和图片，显示切换按钮
     if (project.video && project.images && project.images.length > 0) {
-        toggleMediaButton.innerText = '查看图片';
+        // Set the toggle button text according to language
+        toggleMediaButton.innerText = (currentLanguage === 'zh') ? '查看图片' : 'View Image';
         toggleMediaButton.style.display = 'block';
 
         modalVideoContainer.style.display = 'block';
